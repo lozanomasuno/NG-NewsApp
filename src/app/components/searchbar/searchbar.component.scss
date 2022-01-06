@@ -1,0 +1,30 @@
+
+  .search-box{
+    width: 100%;
+    position: relative;
+    display: flex;  
+  }
+
+  .search-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-right: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+  }
+
+  .search-button{
+    text-align: center;
+    height: 51px;
+    width: 40px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-left: none;
+    background: none;
+    font-size: 20px;
+    border-left: 1px solid gray; 
+  }
+  
