@@ -1,14 +1,14 @@
 body {
     background-color: #F4F7FA;
   }
-  h1{
-    font-weight: 300;
-  }
+
+h1{
+  font-weight: 300;
+}
 
 section {
     max-width: 1024px;
-    margin: 0 auto;
-    width: 50%;
+    margin: 0 auto;  
     color: black;
 
     .container{
@@ -37,11 +37,23 @@ section {
   }
   
   @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    section {
+      width: 100%;
+      .container{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        margin: 0 auto !important;
+      }
+    }
    
   }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
   }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
+    
   }
