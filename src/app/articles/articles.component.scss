@@ -1,0 +1,47 @@
+body {
+    background-color: #F4F7FA;
+  }
+  h1{
+    font-weight: 300;
+  }
+
+section {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 50%;
+    color: black;
+
+    .container{
+      display: flex;
+      flex-direction: row;
+    }
+    div{
+      margin: 1%;
+    }
+    img{
+      width: 100%;
+    }
+    label{
+      font-weight: 700;
+      font-size: 1.5em;
+      line-height: 1em;
+      margin: 2% 0;
+    }
+    p{
+      margin: 0.1%;
+      color: gray;
+      &:nth-child(2n){
+        color: black !important;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+   
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  }

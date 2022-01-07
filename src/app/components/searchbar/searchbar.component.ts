@@ -14,7 +14,7 @@ public urlImage: any;
 
   ngOnInit(): void {
   }
-
+  /*Deprecated*/
   search(){
     this.apinewsService.getApiNews(this.keyword).subscribe((data: any) =>{
      this.keyword = data.articles[0].urlToImage;

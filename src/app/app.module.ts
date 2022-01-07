@@ -8,19 +8,30 @@ import { HeaderComponent } from './components/header/header.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ArticlesComponent } from './articles/articles.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+let appRoutes:Routes =[
+  {path:'', component: NewsComponent},
+  {path:'articles', component: ArticlesComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
     HeaderComponent,
-    SearchbarComponent    
+    SearchbarComponent,
+    ArticlesComponent    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule,
-    AppRoutingModule
+    FormsModule,    
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

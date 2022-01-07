@@ -1,0 +1,21 @@
+<app-searchbar></app-searchbar>
+<app-news></app-news>
+
+
+<section>
+  <div>
+    <!--Debe ser otro componente-->
+    <h1><strong>Recent</strong> News</h1>
+  </div>
+  <div class="container" >
+      <div class="newsApp"  *ngFor="let data of alldata"> 
+        <img [src]="data.urlToImage" alt="">
+        <label>{{data.title}}</label>
+        <p> <strong>{{data.author}}</strong></p>
+        <p>{{data.description}}</p>
+    </div>   
+  </div>
+ 
+     
+    
+  </section>

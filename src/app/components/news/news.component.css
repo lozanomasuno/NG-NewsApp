@@ -24,4 +24,5 @@
 .newsApp p:first-child {
   font-size: 45px;
   font-weight: 100;
+  margin: 0;
 }/*# sourceMappingURL=news.component.css.map */
