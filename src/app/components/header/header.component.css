@@ -1,0 +1,11 @@
+h1 {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  color: rgb(41, 41, 41);
+  font-size: 3em;
+  padding: 4%;
+}/*# sourceMappingURL=header.component.css.map */

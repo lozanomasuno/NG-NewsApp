@@ -7,16 +7,17 @@ import { ApinewsService } from 'src/app/services/apinews.service';
   styleUrls: ['./searchbar.component.scss']
 })
 export class SearchbarComponent implements OnInit {
-public name: any;
+public keyword: any;
 public urlImage: any;
+
   constructor(private apinewsService : ApinewsService) { }
 
   ngOnInit(): void {
   }
 
   search(){
-    this.apinewsService.getApiNews().subscribe((data: any) =>{
-     this.urlImage = data.articles[0].urlToImage;
+    this.apinewsService.getApiNews(this.keyword).subscribe((data: any) =>{
+     this.keyword = data.articles[0].urlToImage;
       console.log(this.urlImage);
     });
   }

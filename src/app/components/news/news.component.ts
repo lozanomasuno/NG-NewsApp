@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApinewsService } from 'src/app/services/apinews.service';
 
 @Component({
   selector: 'app-news',
@@ -6,10 +7,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.scss']
 })
 export class NewsComponent implements OnInit {
-
-  constructor() { }
+  public totalArticles: number = 0;
+  public addAuthor: string = "";
+  public authors: string[]= [];
+  public totalAuthors : number = 0;
+  public loadAuthors: any[] = [];
+  constructor(private apiNewService : ApinewsService) { }
 
   ngOnInit(): void {
+    this.loadNews();
+    this.loadnewsAutor()
   }
 
+  public loadNews(){
+    this.apiNewService.getTotalResults().subscribe((data:any) =>{
+      this.totalArticles =  data.articles.length;
+    })
+  }
+
+  public loadnewsAutor(){
+    this.apiNewService.getTotalResults().subscribe((data:any) =>{
+      this.totalArticles =  data.articles.length;     
+        for( var i = 0; i < this.totalArticles; i++){
+          this.addAuthor = data.articles[i].author
+          if(this.addAuthor){
+            this.authors.push(this.addAuthor);       
+          }                    
+        }  
+        this.totalAuthors  = this.authors.length
+    })
+  }
 }
