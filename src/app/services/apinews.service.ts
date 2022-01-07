@@ -18,7 +18,5 @@ export class ApinewsService {
     return this.http.get(`${this.url}`)
   }
 
-  getAllArticles(){
-    
-  }
+
 }

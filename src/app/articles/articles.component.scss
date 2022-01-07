@@ -12,8 +12,8 @@ section {
     color: black;
 
     .container{
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
     }
     div{
       margin: 1%;
