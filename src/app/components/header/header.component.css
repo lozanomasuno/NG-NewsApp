@@ -1,11 +1,25 @@
-h1 {
+* {
   font-family: "Oswald", sans-serif;
-  display: flex;
-  justify-content: center;
-  text-transform: capitalize;
+}
+
+.container {
   width: 100%;
-  border: 1px solid #e0e0e0;
-  color: rgb(41, 41, 41);
+  text-transform: uppercase;
+  color: #1b1b1b;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-table;
+}
+.container label {
+  padding: 0;
+  margin: 0;
+  border: 0;
   font-size: 3em;
-  padding: 4%;
+  width: 30%;
+  display: block;
+}
+.container label:nth-child(2n) {
+  color: #e60023;
+  font-weight: 600;
 }/*# sourceMappingURL=header.component.css.map */

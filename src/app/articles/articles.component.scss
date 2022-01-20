@@ -9,11 +9,17 @@ h1{
 section {
     max-width: 1024px;
     margin: 0 auto;  
-    color: black;
+    color: black;    
+    font-size: 1em;
 
+    .newsApp{
+      border-top: 1px solid gray;
+      padding-top: 1%;
+      margin: 0 2%;
+    }
     .container{
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
     }
     div{
       margin: 1%;
@@ -23,15 +29,18 @@ section {
     }
     label{
       font-weight: 700;
-      font-size: 1.5em;
       line-height: 1em;
       margin: 2% 0;
+      text-transform: uppercase;
     }
     p{
       margin: 0.1%;
       color: gray;
       &:nth-child(2n){
         color: black !important;
+      }
+      a{
+        color: #e60023;
       }
     }
   }
@@ -41,8 +50,8 @@ section {
       width: 100%;
       .container{
         display: grid;
-        grid-template-columns: 1fr !important;
-        margin: 0 auto !important;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
       }
     }
    
@@ -50,10 +59,14 @@ section {
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .container{
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr  !important;
       margin: 0 auto;
     }
   }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr !important;
+      margin: 0 auto;
+    }
   }
