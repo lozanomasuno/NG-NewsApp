@@ -16,8 +16,22 @@
 }
 .preheader div a {
   display: inline-flex;
-  color: #949393;
+  color: #737373;
   cursor: pointer;
+}
+.preheader div a:hover {
+  color: #949393;
+  text-decoration: none;
+}
+.preheader div a p:nth-child(2n) {
+  border-radius: 3px;
+  margin-left: 7%;
+  background-color: #e60023;
+  color: white;
+  padding: 0 5%;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
 }
 .preheader div:first-child {
   display: flex;
@@ -30,7 +44,7 @@
   color: #949393;
 }
 .preheader div:nth-child(2n) {
-  margin: 0 6%;
+  margin: 0 15%;
   display: inline-flex;
 }
 .preheader div:nth-child(2n) p {

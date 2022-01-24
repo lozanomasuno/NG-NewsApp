@@ -15,8 +15,25 @@
         width: 140px;
         a{
             display: inline-flex;
-            color: #949393;
+            color: hsl(0, 0%, 45%);
             cursor: pointer;
+
+            &:hover{
+                color: #949393;
+                text-decoration: none;
+            }   
+            p{
+                &:nth-child(2n){
+                    border-radius: 3px;
+                    margin-left: 7%;
+                    background-color: #e60023;
+                    color: white;
+                    padding: 0 5%;
+                    font-size: 0.7em;
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
         &:first-child{           
             display: flex;
@@ -29,7 +46,7 @@
             }
         }
         &:nth-child(2n){
-               margin: 0 6%;
+               margin: 0 15%;
                display: inline-flex;
                p{
                    display: inline;
