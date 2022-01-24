@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PreheaderComponent } from './preheader.component';
 
 
 
 @NgModule({
-  declarations: [
-    PreheaderComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule
   ]

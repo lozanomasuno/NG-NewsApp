@@ -21,11 +21,8 @@ let appRoutes:Routes =[
 @NgModule({
   declarations: [
     AppComponent,
-    NewsComponent,
     HeaderComponent,
     SearchbarComponent,
-    NewsComponent,
-    PreheaderComponent,
     NewsComponent,
     PreheaderComponent,
     ArticlesComponent    

@@ -6,8 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./preheader.component.scss']
 })
 export class PreheaderComponent implements OnInit {
-  //HIJO
- 
+  //Hijo
+ @Input() public allnewsArticle: number = 0;
+ @Input() public AllNewsAuthors: number = 0;
   constructor() { }
 
   ngOnInit(): void {

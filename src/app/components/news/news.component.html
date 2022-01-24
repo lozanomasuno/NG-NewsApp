@@ -1,12 +1,7 @@
-<div class="container newsApp">
-    <div>        
-      <p>{{totalAuthors}}</p>
-       <p>Autores</p>
-        <a href="/articles">ver los autores</a>
-    </div>
-    <div>        
-        <p>{{totalArticles}}</p>
-        <p>Artículos</p>
-        <a href="/articles">ver las noticias</a>
-    </div>
-</div>
+
+    <app-preheader 
+    [allnewsArticle] = 'totalArticles'
+    [AllNewsAuthors] = 'totalAuthors'
+    
+    > </app-preheader>
+

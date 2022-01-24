@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApinewsService } from 'src/app/services/apinews.service';
 
 @Component({
@@ -7,10 +7,12 @@ import { ApinewsService } from 'src/app/services/apinews.service';
   styleUrls: ['./news.component.scss']
 })
 export class NewsComponent implements OnInit {
-  public totalArticles: number = 0;
+  //Padre
+  @Input() public totalArticles: number = 0;
+  @Input() public totalAuthors : number = 0;
   public addAuthor: string = "";
   public authors: string[]= [];
-  public totalAuthors : number = 0;
+ 
   public loadAuthors: any[] = [];
   constructor(private apiNewService : ApinewsService) { }
 
@@ -21,7 +23,7 @@ export class NewsComponent implements OnInit {
 
   public loadNews(){
     this.apiNewService.getTotalResults().subscribe((data:any) =>{
-      return data.articles.length;
+      return this.totalArticles =  data.articles.length;
     })
   }
 

@@ -29,6 +29,7 @@
                display: inline-flex;
                p{
                    display: inline;
+                   margin-bottom: 0;
                    &:nth-child(2n){
                      color: #e60023;;
                    }

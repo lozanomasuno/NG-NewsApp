@@ -30,6 +30,7 @@
 }
 .preheader div:nth-child(2n) p {
   display: inline;
+  margin-bottom: 0;
 }
 .preheader div:nth-child(2n) p:nth-child(2n) {
   color: #e60023;
