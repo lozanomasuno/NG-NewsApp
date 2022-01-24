@@ -13,8 +13,12 @@
     
     div {
         width: 140px;
-        &:first-child{
-           
+        a{
+            display: inline-flex;
+            color: #949393;
+            cursor: pointer;
+        }
+        &:first-child{           
             display: flex;
             justify-content: space-around;
             svg{

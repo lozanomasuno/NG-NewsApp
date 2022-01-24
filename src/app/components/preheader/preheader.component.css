@@ -14,6 +14,11 @@
 .preheader div {
   width: 140px;
 }
+.preheader div a {
+  display: inline-flex;
+  color: #949393;
+  cursor: pointer;
+}
 .preheader div:first-child {
   display: flex;
   justify-content: space-around;
