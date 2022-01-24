@@ -21,7 +21,7 @@ export class NewsComponent implements OnInit {
 
   public loadNews(){
     this.apiNewService.getTotalResults().subscribe((data:any) =>{
-      this.totalArticles =  data.articles.length;
+      return data.articles.length;
     })
   }
 
@@ -34,7 +34,7 @@ export class NewsComponent implements OnInit {
             this.authors.push(this.addAuthor);       
           }                    
         }  
-        this.totalAuthors  = this.authors.length
+        return this.totalAuthors  = this.authors.length
     })
   }
 }

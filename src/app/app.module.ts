@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ArticlesComponent } from './articles/articles.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PreheaderComponent } from './components/preheader/preheader.component';
 
 let appRoutes:Routes =[
   {path:'', component: NewsComponent},
@@ -23,6 +24,10 @@ let appRoutes:Routes =[
     NewsComponent,
     HeaderComponent,
     SearchbarComponent,
+    NewsComponent,
+    PreheaderComponent,
+    NewsComponent,
+    PreheaderComponent,
     ArticlesComponent    
   ],
   imports: [

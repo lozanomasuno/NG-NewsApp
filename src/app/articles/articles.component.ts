@@ -15,9 +15,9 @@ export class ArticlesComponent implements OnInit {
   }
 
   loadAllNews(){   
-      this.apinewsService. getTotalResults().subscribe((data: any) =>{          
-        this.alldata = data.articles
-        console.log(this.alldata);
+      this.apinewsService. getTotalResults().subscribe((data: any) =>{   
+          console.log(this.alldata);       
+        return this.alldata = data.articles;        
       });  
   }
  }

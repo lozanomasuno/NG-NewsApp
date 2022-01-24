@@ -20,6 +20,7 @@ section {
     .container{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      padding: 40px;
     }
     div{
       margin: 1%;
@@ -37,7 +38,7 @@ section {
       margin: 0.1%;
       color: gray;
       &:nth-child(2n){
-        color: black !important;
+        color: rgb(15, 15, 15) !important;
       }
       a{
         color: #e60023;

@@ -1,6 +1,7 @@
 body {
   background-color: #F4F7FA;
 }
+
 h1 {
   font-weight: 300;
 }
@@ -9,10 +10,17 @@ section {
   max-width: 1024px;
   margin: 0 auto;
   color: black;
+  font-size: 1em;
+}
+section .newsApp {
+  border-top: 1px solid gray;
+  padding-top: 1%;
+  margin: 0 2%;
 }
 section .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
 }
 section div {
   margin: 1%;
@@ -22,16 +30,19 @@ section img {
 }
 section label {
   font-weight: 700;
-  font-size: 1.5em;
   line-height: 1em;
   margin: 2% 0;
+  text-transform: uppercase;
 }
 section p {
   margin: 0.1%;
   color: gray;
 }
 section p:nth-child(2n) {
-  color: black !important;
+  color: #0f0f0f !important;
+}
+section p a {
+  color: #e60023;
 }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {

@@ -10,6 +10,7 @@
   height: -moz-fit-content;
   height: fit-content;
   display: inline-table;
+  padding: 3% 2% 0.5% 2%;
 }
 .container label {
   padding: 0;
