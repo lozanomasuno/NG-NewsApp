@@ -2,9 +2,3 @@ body{
   font-family: 'Oswald', sans-serif;
   font-family: 'Tinos', serif;  
 }
-
-app-news{
-  &:nth-child(2n){
-    display: none !important;
-  }
-}

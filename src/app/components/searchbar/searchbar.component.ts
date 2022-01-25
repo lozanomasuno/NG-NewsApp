@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApinewsService } from 'src/app/services/apinews.service';
 
 @Component({
@@ -7,8 +7,8 @@ import { ApinewsService } from 'src/app/services/apinews.service';
   styleUrls: ['./searchbar.component.scss']
 })
 export class SearchbarComponent implements OnInit {
-public keyword: any;
-public urlImage: any;
+@Input() public keyword: string = '';
+         public urlImage: any;
 
   constructor(private apinewsService : ApinewsService) { }
 

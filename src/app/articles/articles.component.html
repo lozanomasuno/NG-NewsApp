@@ -1,18 +1,18 @@
-<app-searchbar></app-searchbar>
-
-
 <section>
   <div>
-    <!--Debe ser otro componente-->
+        
+    <div class="search-box">
+      <input type="text" [(ngModel)]="keyword" class="search-input" placeholder="Search.."  >    
+   </div>
+     
     <h1><strong>Recent</strong> News</h1>
   </div>
   <div class="container" >
-      <div class="newsApp"  *ngFor="let data of alldata"> 
+      <div class="newsApp"  *ngFor="let data of alldata | search: keyword" > 
         <img [src]="data.urlToImage" alt="">
         <label>{{data.title}}</label>
         <p> <strong>{{data.author}}</strong></p>
         <p>{{data.description}} <strong><a href="{{data.url}}">READ... </a></strong></p>
-        <p></p>
     </div>   
   </div>
  

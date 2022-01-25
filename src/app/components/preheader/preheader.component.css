@@ -59,4 +59,13 @@
 }
 .preheader div:last-child:hover {
   color: #949393;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .preheader div {
+    width: 138px;
+  }
+  .preheader div:nth-child(3n) {
+    display: none;
+  }
 }/*# sourceMappingURL=preheader.component.css.map */

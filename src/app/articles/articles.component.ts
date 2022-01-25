@@ -8,6 +8,8 @@ import { ApinewsService } from '../services/apinews.service';
 })
 export class ArticlesComponent implements OnInit {
   public alldata: any[] = []
+  public keyword: string = "";
+
   constructor(private apinewsService : ApinewsService) { }
 
   ngOnInit(): void {
@@ -16,7 +18,7 @@ export class ArticlesComponent implements OnInit {
 
   loadAllNews(){   
       this.apinewsService. getTotalResults().subscribe((data: any) =>{   
-          console.log(this.alldata);       
+          console.log(data.articles);       
         return this.alldata = data.articles;        
       });  
   }

@@ -8,8 +8,8 @@ import { ApinewsService } from 'src/app/services/apinews.service';
 })
 export class NewsComponent implements OnInit {
   //Padre
-  @Input() public totalArticles: number = 0;
-  @Input() public totalAuthors : number = 0;
+  public totalArticles: number = 0;
+  public totalAuthors : number = 0;
   public addAuthor: string = "";
   public authors: string[]= [];
  
